@@ -1,0 +1,71 @@
+{
+    "projects": {
+        "ProjetLibreMain": {
+
+            "additionalDependencies": [
+                "sfml-graphics-s-d.lib",
+                "sfml-window-s-d.lib",
+                "sfml-system-s-d.lib",
+                "sfml-audio-s-d.lib",
+		            "opengl32.lib",
+		            "freetype.lib",
+		            "winmm.lib",
+		            "gdi32.lib",
+				"flac.lib",
+				"ogg.lib",
+				"vorbis.lib",
+				"vorbisenc.lib",
+				"vorbisfile.lib",
+				"freetype.lib"],
+            "additionalIncludeDirectories": [
+                "$(SolutionDir)\\..\\lib\\SFML-3.0.0\\include" ],
+            "additionalLibraryDirectories": [
+                "$(SolutionDir)\\..\\lib\\SFML-3.0.0\\lib" ],
+            "dependencies": [
+                "SfmlMotor"
+            ],
+            "dependents": [],
+            "guid": "3F506CE4-7092-07B8-4569-05D90F2F2DB1",
+            "lib": false,
+            "pch": true,
+            "preprocessorDefinitions": ["SFML_STATIC"],
+            "vcpkg": false,
+            "window": false
+        },
+        "SfmlMotor": {
+            "additionalDependencies": [
+                "sfml-graphics-s-d.lib",
+                "sfml-window-s-d.lib",
+                "sfml-system-s-d.lib",
+                "sfml-audio-s-d.lib",
+		            "opengl32.lib",
+		            "freetype.lib",
+		            "winmm.lib",
+		            "gdi32.lib",
+				"flac.lib",
+				"ogg.lib",
+				"vorbis.lib",
+				"vorbisenc.lib",
+				"vorbisfile.lib",
+				"freetype.lib"],
+            "additionalIncludeDirectories": [
+                "$(SolutionDir)\\..\\lib\\SFML-3.0.0\\include" ],
+            "additionalLibraryDirectories": [
+                "$(SolutionDir)\\..\\lib\\SFML-3.0.0\\lib" ],
+            "dependencies": [],
+            "dependents": [
+                "ProjetLibreMain"
+            ],
+            "guid": "10053725-6481-5C67-7C32-30061DE02F85",
+            "lib": true,
+            "pch": true,
+            "preprocessorDefinitions": ["SFML_STATIC"],
+            "vcpkg": false,
+            "window": false
+        }
+    },
+    "solution_guid": "3D9748C9-2403-7614-0616-6F1C25DA355F",
+    "solution_name": "ProjetLibre",
+    "startup_project": "SfmlMotor",
+    "version": "1.17.4"
+}
